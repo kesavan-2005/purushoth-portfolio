@@ -1,0 +1,38 @@
+.App { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-transparent {
+  background: rgba(0,0,0,0.3) !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.skill-card, .hover-lift {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  background: white;
+}
+
+.skill-card:hover, .hover-lift:hover {
+  transform: translateY(-10px);
+}
+
+.profile-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .display-1 { font-size: 3rem !important; }
+  .hero { padding-top: 100px; }
+}
